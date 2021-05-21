@@ -45,7 +45,7 @@ class AuthTokenController:
 						"role": user.role,
 					}
 				},
-				Config.SEKRET,
+				Config.SECRET,
 				algorithm=Config.JWT_ALGO	
 			) # create  new jwt token
 		except:

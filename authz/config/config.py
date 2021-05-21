@@ -4,7 +4,7 @@ class Config:
 		ENV=environ.get("SKOB_AUTHZ_ENV", "production" )
 		DBGUG=int(environ.get("SKOB_AUTHZ_DBGUG", "0" ))
 		TESTING=int(environ.get("SKOB_AUTHZ_TESTING", "0" ))
-		SEKRET=environ.get("SKOB_AUTHZ_SEKRET", "VERY-HARD-SECURE-SEKRET-CODE" )
+		SECRET=environ.get("SKOB_AUTHZ_SEKCET", "VERY-HARD-SECURE-SEKRET-CODE" )
 		JWT_ALGO=environ.get("SKOB_AUTHZ_ALGO", "HS512" )
 		JWT_TOKEN_LIFETIME=int(environ.get("SKOB_AUTHZ_JWT_TOKEN_LIFETIME", "86400" ))
 	 
