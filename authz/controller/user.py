@@ -23,7 +23,7 @@ class UserController:
 		except:
 			abort(500) # database error	
 		if user is not None:
-			abort(400) # user is already registered
+			abort(409) # user is already registered
 		user = User(username=data["username"],password=data["password"]) # create  new  username 
 		db.session.add(user) # add  to  database  session
 		try:
